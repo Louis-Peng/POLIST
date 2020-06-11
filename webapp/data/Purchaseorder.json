@@ -1,0 +1,179 @@
+{
+  "POs": [
+	{
+	  "ProductName": "Pineapple",
+	  "Quantity": 21,
+      "Status": "A",
+      "Order": "1000000000",      
+      "CompanyID": "A88888",
+      "CompanyName": "Accenture",
+      "CompanyOrder": "B100001",
+      "CreateDate": "2020-05-20 09:00:10",
+      "CreateBy": "张涛",
+      "ContactPerson": "李源",
+      "HomePhone": "13113113311",
+      "ContactMail": "yuanli@163.com",
+      "Amount": 878.2300,
+      "Currency": "万元",
+      "PeymentTerm": "L/C信用证",
+      "com": "yuantong",
+      "nu": "V030344422",
+      "data": [
+        {
+         "context": "上海分拨中心/装件入车扫描 ",
+         "time": "2020-05-20 16:33:19",
+         "ftime": "2020-05-20 16:33:19"
+        },
+        {
+         "context": "上海分拨中心/发往唐山 ",
+         "time": "2020-05-20 17:22:42",
+         "ftime": "2020-05-20 17:22:42"
+        },
+        {
+         "context": "唐山中转部/到达 ",
+         "time": "2020-05-20 23:32:42",
+         "ftime": "2020-05-20 23:32:42"
+        },
+        {
+         "context": "唐山中转部/发往大连 ",
+         "time": "2020-05-20 23:42:42",
+         "ftime": "2020-05-20 23:42:42"
+        }
+      ]
+	},
+	{
+	  "ProductName": "Milk",
+	  "Quantity": 14,
+	  "Status": "B",
+      "Order": "1000000001",      
+      "CompanyID": "A88888",
+      "CompanyName": "Accenture",
+      "CompanyOrder": "B100002",
+      "CreateDate": "2020-05-23 10:01:19",
+      "CreateBy": "张涛",
+      "ContactPerson": "李天赐",
+      "HomePhone": "18823223322",
+      "ContactMail": "yuantianci@163.com",          
+      "Amount": 578.5300,
+      "Currency": "万元",
+      "PeymentTerm": "T/T电汇",
+      "com": "yuantong",
+      "nu": "V030355522",
+      "data": [
+        {
+         "context": "上海分拨中心/装件入车扫描 ",
+         "time": "2020-05-23 13:33:19",
+         "ftime": "2020-05-23 13:33:19"
+        },
+        {
+         "context": "上海分拨中心/发往唐山 ",
+         "time": "2020-05-23 14:22:42",
+         "ftime": "2020-05-23 14:22:42"
+        },
+        {
+         "context": "唐山中转部/到达 ",
+         "time": "2020-05-23 23:32:42",
+         "ftime": "2020-05-23 23:32:42"
+        }
+      ]
+	},
+	{
+	  "ProductName": "Canned Beans",
+	  "Quantity": 23,
+	  "Status": "B",
+      "Order": "1000000002",      
+      "CompanyID": "A88888",
+      "CompanyName": "Accenture",
+      "CompanyOrder": "B100003",
+      "CreateDate": "2020-05-25 10:13:19",
+      "CreateBy": "张涛",
+      "ContactPerson": "李天赐",
+      "HomePhone": "18823223322",
+      "ContactMail": "yuantianci@163.com",          
+      "Amount": 78.9300,
+      "Currency": "万元",
+      "PeymentTerm": "T/T电汇",
+      "com": "yuantong",
+      "nu": "V030366622",
+      "data": [
+        {
+         "context": "上海分拨中心/装件入车扫描 ",
+         "time": "2020-05-25 15:13:19",
+         "ftime": "2020-05-25 15:13:19"
+        },
+        {
+         "context": "上海分拨中心/发往唐山 ",
+         "time": "2020-05-25 16:52:42",
+         "ftime": "2020-05-25 16:52:42"
+        }
+      ]
+	},
+	{
+	  "ProductName": "Salad",
+	  "Quantity": 12,
+	  "Status": "C",
+      "Order": "1000000003",      
+      "CompanyID": "A88888",
+      "CompanyName": "Accenture",
+      "CompanyOrder": "B100004",
+      "CreateDate": "2020-05-26 08:13:39",
+      "CreateBy": "张涛",
+      "ContactPerson": "李天赐",
+      "HomePhone": "18823223322",
+      "ContactMail": "yuantianci@163.com",         
+      "Amount": 88.2300,
+      "Currency": "万元",
+      "PeymentTerm": "D/A(承兑交单 ，托收)",
+      "com": "yuantong",
+      "nu": "V030377722",
+      "data": [
+        {
+         "context": "上海分拨中心/装件入车扫描 ",
+         "time": "2020-05-26 17:14:19",
+         "ftime": "2020-05-26 17:14:19"
+        },
+        {
+         "context": "上海分拨中心/发往唐山 ",
+         "time": "2020-05-26 18:52:41",
+         "ftime": "2020-05-26 18:52:41"
+        }
+      ]
+	},
+	{
+	  "ProductName": "Bread",
+	  "Quantity": 11,
+	  "Status": "A",
+      "Order": "1000000004",      
+      "CompanyID": "A88888",
+      "CompanyName": "Accenture",
+      "CompanyOrder": "B100005",
+      "CreateDate": "2020-05-27 05:13:19",
+      "CreateBy": "张涛",
+      "ContactPerson": "李源",
+      "HomePhone": "13113113311",
+      "ContactMail": "yuanli@163.com",      
+      "Amount": 78.0300,
+      "Currency": "万元",
+      "PeymentTerm": "D/P(付款交单，托收)",
+      "com": "yuantong",
+      "nu": "V030388822",
+      "data": [
+        {
+         "context": "上海分拨中心/装件入车扫描 ",
+         "time": "2020-05-27 15:43:19",
+         "ftime": "2020-05-27 15:43:19"
+        },
+        {
+         "context": "上海分拨中心/发往唐山 ",
+         "time": "2020-05-27 16:02:42",
+         "ftime": "2020-05-27 16:02:42"
+        },
+        {
+         "context": "唐山中转部/到达 ",
+         "time": "2020-05-27 23:32:42",
+         "ftime": "2020-05-27 23:32:42"
+        }
+      ]
+	}
+  ]
+}

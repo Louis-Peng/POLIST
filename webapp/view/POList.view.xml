@@ -1,0 +1,82 @@
+<mvc:View
+	controllerName="ns.BSP11.controller.POList"
+    xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Table
+        id="polist"
+		class="sapUiResponsiveMargin"
+		width="auto"
+		items="{
+			path : 'purchaseorder>/POs',
+			sorter : {
+				path : 'ContactPerson',
+				group : true
+			}
+		}">
+        <headerToolbar>
+         <Toolbar>
+            <Title text="{purchaseorder>CompanyID}"/>
+            <ToolbarSpacer/>
+            <SearchField width="60%" search=".onFilterPurchaseorders"/>
+          </Toolbar>
+        </headerToolbar> 
+        <columns>
+			<Column
+				hAlign="End"
+				minScreenWidth="Small"
+				demandPopin="false"
+				width="6em">
+				<Text text="{i18n>columnQuantity}"/>
+			</Column>
+			<Column>
+				<Text text="{i18n>columnCompanyOrder}"/>
+			</Column>
+			<Column
+				minScreenWidth="Small"
+				demandPopin="true">
+				<Text text="{i18n>columnStatus}"/>
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="false">
+				<Text text="{i18n>columnOrder}"/>
+			</Column>
+			<Column
+				hAlign="End">
+				<Text text="{i18n>columnAmount}"/>
+			</Column>
+        </columns>       
+		<items>
+			<ColumnListItem
+                type="Navigation"
+				press=".onPress">
+				<cells>
+					<ObjectNumber number="{purchaseorder>Quantity}" emphasized="false"/>
+                    <ObjectIdentifier title="{purchaseorder>CompanyOrder}"/>
+                    <Text text="{
+						path: 'purchaseorder>Status',
+						formatter: '.formatter.statusText'
+					}"/>
+                    <Text text="{purchaseorder>Order}"/>
+                    <ObjectNumber
+						number="{
+							parts: 
+                                [
+                                    {path: 'purchaseorder>Amount'}, 
+                                    {path: 'purchaseorder>Currency'}
+                                ],
+							type: 'sap.ui.model.type.Currency',
+							formatOptions: {
+								showMeasure: false
+							}
+						}"
+						unit="{purchaseorder>Currency}"  
+						state="{
+                            path: 'purchaseorder>Amount',
+                            formatter: '.formatter.amountState'
+                        }"/>                   
+				</cells>
+			</ColumnListItem>              
+		</items>        
+	</Table>
+</mvc:View>

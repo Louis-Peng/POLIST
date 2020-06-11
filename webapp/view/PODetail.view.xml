@@ -1,0 +1,83 @@
+<mvc:View
+    controllerName="ns.BSP11.controller.PODetail"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+    xmlns:f="sap.ui.layout.form"
+    xmlns:l="sap.ui.layout"
+    busyIndicatorDelay="0">
+	<Page
+        id='orderheaderpage'
+		title="{i18n>detailPageTitle}"
+        showNavButton="true"
+		navButtonPress=".onNavBack"
+        class="sapUiResponsiveContentPadding">
+		<content>
+			<Panel
+				id="orderheaderPanel"
+				width="auto"
+				class="sapUiResponsiveMargin sapUiNoContentPadding">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="{i18n>OrderIDColon} {purchaseorder>Order}" level="H2"/>
+						<ToolbarSpacer />
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<f:SimpleForm
+						minWidth="1024"
+						editable="false"
+						layout="ResponsiveGridLayout"
+						labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4"
+						columnsL="1" columnsM="1">
+						<f:content>
+							<Label text="{i18n>formPeymentTerm}"/>
+							<Text text="{purchaseorder>PeymentTerm}"/>
+							<Label text="{i18n>formAmount}"/>
+							<Text text="{purchaseorder>Amount}{purchaseorder>Currency}"/>
+							<Label text="{i18n>formCreateDate}"/>
+							<Text text="{purchaseorder>CreateDate}"/>
+							<Label text="{i18n>formCreateBy}"/>
+							<Text text="{purchaseorder>CreateBy}"/>
+							<Label text="{i18n>formContactPerson}"/>
+							<Text text="{purchaseorder>ContactPerson}"/>
+							<Label text="{i18n>formPhoneHome}"/>
+							<Text text="{purchaseorder>HomePhone}"/>
+							<Label text="{i18n>formContactMail}"/>
+				            <Link 
+					            href="{
+							      parts: [
+							    	'purchaseorder>ContactMail',
+							    	'purchaseorder>ContactPerson'
+						    	  ],
+						    	  formatter: '.formatMail'
+					        	}"
+					            text="{purchaseorder>ContactMail}"/>     
+						</f:content>
+					</f:SimpleForm>                                  
+				</content>
+			</Panel>
+            <Panel
+				id="shippingPanel"
+				width="auto"
+				class="sapUiResponsiveMargin sapUiNoContentPadding">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="{i18n>shippingnu} {purchaseorder>nu}" level="H2"/>
+						<ToolbarSpacer />
+					</Toolbar>
+				</headerToolbar>
+				<content>
+                    <List headerText="{purchaseorder>com}" items="{purchaseorder>data}">
+                        <items>
+                            <ObjectListItem title="{purchaseorder>context}">
+                                <attributes>
+                                    <ObjectAttribute text="{purchaseorder>time}"/>
+                                </attributes>
+                            </ObjectListItem>
+                        </items>
+                    </List>
+                </content>
+            </Panel>
+		</content>
+	</Page>
+</mvc:View>
